@@ -5,6 +5,6 @@ Seaside is a basic shell alternative designed for file management tasks on Windo
 
 Seaside allows users to navigate directories, manage files, and perform essential operations without relying on graphical interfaces. This makes it a valuable tool for system administrators and power users who prefer command-line efficiency. While having executables only on Windows, we are actively seeking a volunteers to help with Linux versions.
 
---------------------
+-
 
 © Berkay Güldal 2024-2025. All rights reserved.
