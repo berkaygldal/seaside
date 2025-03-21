@@ -10,8 +10,8 @@ print("""   :::::::::::::::::::::                project seaside
  ::::::::::     :::       ::  :::::     please read the documentation
 :::::::::::::::   :::      ::::::       for more information.
              :::::::::        ::::       
-                  ::::        ::::      you are currently running:
-                ::::        :::::       seaside version 1.2
+                  ::::        ::::      latest stable release:
+                ::::        :::::       seaside version 1.3
               ::::        ::::::        
             :::::::   ::::::::          © Berkay Güldal 2024-2025
         :::::::::::::::::::             All rights reserved.
