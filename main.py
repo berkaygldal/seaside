@@ -9,6 +9,33 @@ from colorama import Fore, Style
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PACKAGE_DIR = os.path.join(BASE_DIR, "packages")
 sys.path.append(PACKAGE_DIR)
+os.makedirs(PACKAGE_DIR, exist_ok=True)
+
+PAKAGE_PATH = os.path.join(PACKAGE_DIR, "pakage.py")
+
+if not os.path.exists(PAKAGE_PATH):
+    with open(PAKAGE_PATH, "w") as f:
+        f.write('''import os
+import requests
+
+PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+os.makedirs(PACKAGE_DIR, exist_ok=True)
+
+def pakage(func, action, repo="https://raw.githubusercontent.com/berkaygldal/seaside/main/pakage/"):
+    if func == "install":
+        file = action + ".py"
+        url = f"{repo}{file}"
+        filepath = os.path.join(PACKAGE_DIR, file)
+        try:
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()
+            with open(filepath, "wb") as f:
+                f.write(response.content)
+            print(f"pakage : successfully installed {action}.")
+        except requests.exceptions.RequestException as e:
+            print(f"pakage : error while installing: {e}")
+''')
 
 def load(file):
     filepath = os.path.join(PACKAGE_DIR, f"{file}.py")
