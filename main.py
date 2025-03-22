@@ -1,10 +1,31 @@
-import os
-import shutil
-import getpass
-import shlex
-import importlib.util
-import sys
+import os,shutil,getpass,shlex,importlib.util,sys,requests,matplotlib,webview
+from PIL import Image
+import matplotlib.pyplot as plt
+from io import BytesIO
 from colorama import Fore, Style
+import tkinter as tk
+from PyQt5.QtWidgets import (
+    QApplication,
+    QCheckBox,
+    QComboBox,
+    QDateEdit,
+    QDateTimeEdit,
+    QDial,
+    QDoubleSpinBox,
+    QFontComboBox,
+    QLabel,
+    QLCDNumber,
+    QLineEdit,
+    QMainWindow,
+    QProgressBar,
+    QPushButton,
+    QRadioButton,
+    QSlider,
+    QSpinBox,
+    QTimeEdit,
+    QVBoxLayout,
+    QWidget,
+)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PACKAGE_DIR = os.path.join(BASE_DIR, "packages")
