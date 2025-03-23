@@ -11,7 +11,7 @@ print("""   :::::::::::::::::::::                project seaside
 :::::::::::::::   :::      ::::::       for more information.
              :::::::::        ::::       
                   ::::        ::::      latest stable release:
-                ::::        :::::       seaside version 1.3.2
+                ::::        :::::       seaside version 1.3.1
               ::::        ::::::        
             :::::::   ::::::::          © Berkay Güldal 2024-2025
         :::::::::::::::::::             All rights reserved.
