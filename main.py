@@ -33,11 +33,6 @@ sys.path.append(PACKAGE_DIR)
 os.makedirs(PACKAGE_DIR, exist_ok=True)
 INSTALL_FILE = os.path.join(PACKAGE_DIR, "install.txt")
 
-if not os.path.exists(INSTALL_FILE):
-    setup_dir = input("Please enter current install directory: ")
-    with open(INSTALL_FILE, "w", encoding="utf-8") as f:
-        f.write(setup_dir.strip())
-
 PAKAGE_PATH = os.path.join(PACKAGE_DIR, "pakage.py")
 
 if not os.path.exists(PAKAGE_PATH):
